@@ -77,7 +77,7 @@ a {
   transition: 0.3s all;
 }
 .top-header ul li a:hover {
-  color: var(--color-purple);
+  color: var(--color-light-purple);
 }
 .top-header ul li a i {
   margin-right: 0.3rem;
@@ -877,6 +877,164 @@ header .navbar-brand img {
   background-color: var(--color-purple);
   width: 1rem;
   height: 1rem;
+}
+
+.services-page {
+  position: relative;
+  padding: 5rem 0rem;
+  background-color: #f4f9fd;
+}
+@media screen and (max-width: 600px) {
+  .services-page {
+    padding: 3rem 0rem;
+  }
+}
+.services-page .title {
+  margin-bottom: 3rem;
+}
+.services-page .title h6 {
+  color: var(--color-purple);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 991px) {
+  .services-page .title h6 {
+    font-size: 1rem;
+  }
+}
+.services-page .title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+@media screen and (max-width: 991px) {
+  .services-page .title h2 {
+    font-size: 1.5rem;
+  }
+}
+.services-page .title .text-area {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.services-page .title .text-area p {
+  max-width: 28rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--color-gray);
+}
+@media screen and (max-width: 991px) {
+  .services-page .title .text-area p {
+    font-size: 0.8rem;
+  }
+}
+.services-page .card {
+  box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  border: none;
+  height: 18rem;
+  border-radius: 0;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (max-width: 991px) {
+  .services-page .card {
+    padding: 1rem;
+  }
+}
+.services-page .card .card-body {
+  padding: 0rem;
+}
+.services-page .card .icon {
+  margin-bottom: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 75px;
+  border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+  background-color: #ffffff;
+  font-size: 30px;
+  transition: 0.5s;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+}
+@media screen and (max-width: 991px) {
+  .services-page .card .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.services-page .card .icon img {
+  max-width: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 991px) {
+  .services-page .card .icon img {
+    max-width: 1.5rem;
+  }
+}
+.services-page .card h6 {
+  color: var(--color-black);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.services-page .card p {
+  color: var(--color-black);
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+.services-page .card a {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.services-page .card:hover {
+  color: var(--color-white);
+}
+.services-page .card:hover .icon {
+  border-radius: 50%;
+}
+.services-page .card:hover a,
+.services-page .card:hover p,
+.services-page .card:hover h6 {
+  color: var(--color-white);
+}
+.services-page .card:hover::before {
+  visibility: hidden;
+  opacity: 0;
+}
+.services-page .card:hover::after {
+  visibility: visible;
+  opacity: 0.8;
+}
+.services-page .card::before {
+  content: "";
+  background-color: var(--color-white2);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s all;
+}
+.services-page .card::after {
+  content: "";
+  background-color: rgba(149, 103, 224, 0.7803921569);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all;
 }
 
 .contact {
