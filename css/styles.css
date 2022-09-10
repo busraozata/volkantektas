@@ -337,6 +337,44 @@ header .navbar-brand img {
      object-fit: cover;
 }
 
+.sub-banner {
+  min-height: 30vh;
+  position: relative;
+  z-index: 99;
+}
+.sub-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.297);
+  z-index: -1;
+}
+.sub-banner h2 {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 2rem;
+}
+.sub-banner ul {
+  padding-left: 0rem;
+}
+.sub-banner ul li {
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.sub-banner ul li a {
+  color: var(--color-white);
+  font-weight: 300;
+}
+.sub-banner ul i {
+  font-size: 0.7rem;
+  margin: 0rem 0.3rem;
+  color: var(--color-white);
+}
+
 @media screen and (min-width: 991px) {
   .about .container-fluid {
     padding-left: 0rem;
@@ -617,6 +655,100 @@ header .navbar-brand img {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s all;
+}
+
+.my-vission {
+  position: relative;
+  padding: 5rem 0rem;
+}
+@media screen and (max-width: 600px) {
+  .my-vission {
+    padding: 3rem 0rem;
+  }
+}
+.my-vission .box {
+  margin-bottom: 1.875rem;
+  background-color: var(--color-white);
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+  padding: 1.563rem 1.25rem;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.my-vission .box:hover {
+  transform: translateY(-8px);
+}
+.my-vission .box:hover::before {
+  width: 100%;
+}
+.my-vission .box:hover::after {
+  left: -3.125rem;
+  bottom: -3.125rem;
+}
+.my-vission .box:hover .icon {
+  background-color: var(--color-light-purple);
+  color: var(--color-white);
+}
+.my-vission .box:hover h3 {
+  color: var(--color-white);
+}
+.my-vission .box:hover p {
+  color: var(--color-white);
+}
+.my-vission .box::before {
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color-purple);
+  transition: 0.5s;
+}
+.my-vission .box::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--color-white);
+  left: -5rem;
+  bottom: -5rem;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+.my-vission .box .icon {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  line-height: 60px;
+  border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  transition: 0.5s;
+}
+.my-vission .box h3 {
+  transition: 0.5s;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .my-vission .box h3 {
+    font-size: 1rem;
+  }
+}
+.my-vission .box p {
+  transition: 0.5s;
+  line-height: 1.8;
+  font-size: 0.8rem;
+  color: var(--color-black2);
+  margin: 0.75rem 0rem 0.75rem 0rem;
 }
 
 .instagram-posts {
