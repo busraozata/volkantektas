@@ -354,7 +354,7 @@ header .navbar-brand img {
 }
 .sub-banner h2 {
   color: var(--color-white);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
 }
 .sub-banner ul {
@@ -1035,6 +1035,209 @@ header .navbar-brand img {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s all;
+}
+
+.service-detail {
+  position: relative;
+  padding: 5rem 0rem;
+  background-color: #f4f9fd;
+}
+@media screen and (max-width: 600px) {
+  .service-detail {
+    padding: 3rem 0rem;
+  }
+}
+.service-detail .img-wrapper img {
+  height: 30rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-detail h3 {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: block;
+  margin: 1.5rem 0rem;
+}
+.service-detail p {
+  color: var(--color-black2);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.service-detail .list {
+  padding-left: 0rem;
+  margin-bottom: 1.5rem;
+}
+.service-detail .list li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.service-detail .list li:hover i {
+  border-radius: 50%;
+}
+.service-detail .list li span {
+  font-size: 0.9rem;
+  color: var(--color-black);
+}
+@media screen and (max-width: 991px) {
+  .service-detail .list li span {
+    font-size: 0.8rem;
+  }
+}
+.service-detail .list li i {
+  margin-right: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+  background-color: var(--color-light-purple);
+  color: var(--color-purple);
+  font-size: 0.8rem;
+  transition: 0.3s all;
+}
+@media screen and (max-width: 991px) {
+  .service-detail .list li i {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+  }
+}
+.service-detail .list li:hover i {
+  background-color: var(--color-purple) !important;
+}
+@media screen and (max-width: 1024px) {
+  .service-detail .list li span {
+    font-size: 0.7rem !important;
+  }
+}
+.service-detail .list li i {
+  transition: 0.3s all;
+  color: var(--color-white) !important;
+}
+.service-detail .widget_search {
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
+  background-color: var(--color-white);
+  padding: 1.5625rem;
+}
+@media screen and (max-width: 600px) {
+  .service-detail .widget_search {
+    padding: 1rem;
+  }
+}
+.service-detail .widget_search .search-form {
+  position: relative;
+  overflow: hidden;
+}
+.service-detail .widget_search .search-form label {
+  display: block;
+  margin-bottom: 0;
+}
+.service-detail .widget_search .search-form input {
+  background-color: transparent;
+  height: 3rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #eeeeee;
+  width: 100%;
+  display: block;
+  outline: 0;
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+.service-detail .widget_search .search-form input:focus {
+  border: 1px solid var(--color-light-purple);
+}
+@media screen and (max-width: 600px) {
+  .service-detail .widget_search .search-form input {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+.service-detail .widget_search .search-form button {
+  position: absolute;
+  right: 0;
+  outline: 0;
+  bottom: 0;
+  height: 100%;
+  width: 3rem;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  transition: 0.5s;
+}
+.service-detail .widget_services_list {
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.08);
+  background-color: #ffffff;
+  padding: 25px;
+}
+.service-detail .widget_services_list h3 {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 600px) {
+  .service-detail .widget_services_list h3 {
+    font-size: 1rem;
+  }
+}
+.service-detail .widget_services_list h3::before {
+  content: "";
+  position: absolute;
+  background: var(--color-purple);
+  bottom: -1px;
+  left: 0;
+  width: 2rem;
+  height: 1px;
+}
+.service-detail .widget_services_list ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.04);
+  background-color: var(--color-white);
+}
+.service-detail .widget_services_list ul li a {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0.9375rem 0.625rem 0.9375rem 0.9375rem;
+  color: var(--color-black2);
+  z-index: 1;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 1024px) {
+  .service-detail .widget_services_list ul li a {
+    font-size: 0.7rem;
+  }
+}
+.service-detail .widget_services_list ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-black);
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+}
+.service-detail .widget_services_list ul li a.active, .service-detail .widget_services_list ul li a:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  padding-left: 1.25rem;
+}
+.service-detail .widget_services_list ul li a.active::before, .service-detail .widget_services_list ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+  width: 0.3rem;
 }
 
 .contact {
