@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <div class="top-header d-lg-block d-none">
         <div class="container">
             <div class="row">
@@ -143,93 +142,121 @@
     <section class="sub-banner d-flex justify-content-center align-items-center"
         style="background: url(./img/doctor.jpg) no-repeat; background-size: cover; background-repeat: no-repeat; background-position: center;">
         <div class="container text-center">
-            <h2>Hakkımda</h2>
+            <h2>İletişim</h2>
             <ul class="d-flex align-items-center justify-content-center">
                 <li><a href="index.html">Ana Sayfa</a></li>
                 <i class="fa-solid fa-chevron-right"></i>
-                <li>Hakkımda</li>
+                <li>İletişim</li>
             </ul>
         </div>
     </section>
-    <section class="about py-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="./img/service2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6">
-                    <div class="content d-flex flex-column justify-content-between align-items-start h-100">
-                        <div>
-                            <h6>Hakkımda</h6>
-                            <h2>Volkan Tektas Kimdir?</h2>
-                            <div class="text-area d-flex flex-column justify-content-start align-items-start">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 
-                                </p>
-                                <ul>
-                                    <li class="d-flex align-items-center"><i class="fa-solid fa-check"></i> <span> Lorem
-                                            ipsum dolor sit amet. </span></li>
-                                    <li class="d-flex align-items-center"><i class="fa-solid fa-check"></i> <span>Lorem
-                                            ipsum dolor sit amet.</span>
-                                    </li>
-                                    <li class="d-flex align-items-center"><i class="fa-solid fa-check"></i> <span>Lorem
-                                            ipsum dolor sit amet consectetur adipisicing.</span></li>
-                                    <li class="d-flex align-items-center"><i class="fa-solid fa-check"></i> <span>Lorem
-                                            ipsum dolor sit, amet consectetur adipisicing elit.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="" class="btn">DEVAMINI GÖR <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="my-vission">
+    <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="box">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check"></i>
+                <div class="col-lg-12">
+                    <div class="title text-center">
+                        <h6>Mesaj Gönder</h6>
+                        <h2>Herhangi bir soru için bana mesaj bırakın</h2>
+                        <div class="text-area d-flex flex-column justify-content-center align-items-center">
+                            <p>Bir fikriniz varsa bunu duymayı çok isterim</p>
                         </div>
-
-                        <h3>Misyonum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="box">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="name" class="form-control" required=""
+                                            placeholder="Ad">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
 
-                        <h3>Planım</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control" required=""
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" id="phone_number" required=""
+                                            class="form-control" placeholder="Telefon">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" id="subject" class="form-control" required=""
+                                            placeholder="Konu">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="7"
+                                            required="" placeholder="Mesajınız"></textarea>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="col-lg-12 col-md-12 text-center d-flex align-items-center justify-content-center">
+                                    <button type="submit" class="btn d-flex align-items-center justify-content-center"
+                                        style="pointer-events: all; cursor: pointer;"><span>Gönder</span> <i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="box">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="contact-info">
+                        <ul>
+                            <li class="d-flex align-items-start justify-content-start flex-wrap">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="content d-flex flex-column align-items-start justify-content-center">
+                                    <span>Address</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, reprehenderit.
+                                    </p>
+                                </div>
+                            </li>
 
-                        <h3>Vizyonum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                            <li class="d-flex justify-content-start align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="content  d-flex flex-column align-items-start justify-content-center">
+                                    <span>Email</span>
+                                    <a href="#">volkantektas@gmail.com</a>
+                                </div>
+                            </li>
+
+                            <li class="d-flex justify-content-start align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="content  d-flex flex-column align-items-start justify-content-center">
+                                    <span>Phone</span>
+                                    <a href="#">+90 555 555 55 55</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6019.680807364651!2d29.172915676461162!3d41.028747460833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cace8b256b2bad%3A0x84a1ef3408d20dab!2sVillaBelde!5e0!3m2!1str!2str!4v1662799522337!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
-      <!--   <div class="footer-top">
+        <!-- <div class="footer-top">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">

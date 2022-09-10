@@ -856,6 +856,7 @@ header {
             position: relative;
             font-size: 1.3rem;
             font-weight: 700;
+            color: var(--color-black);
 
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 1rem;
@@ -1035,11 +1036,211 @@ header {
     }
 }
 
+.contact {
+    position: relative;
+    padding: 5rem 0rem;
+
+    @media screen and(max-width:$sm-breakpoint) {
+        padding: 3rem 0rem;
+    }
+
+    .title {
+        margin-bottom: 3rem;
+
+        h6 {
+            @include h6();
+        }
+
+        h2 {
+            @include h2();
+        }
+
+        .text-area {
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+
+            p {
+                @include title-text;
+            }
+        }
+    }
+
+    .contact-form {
+        .form-group {
+            input {
+                height: 3.5rem;
+
+                @media screen and(max-width:$sm-breakpoint) {
+                    height: 3rem;
+                }
+            }
+
+            .form-control {
+                border: none;
+                -webkit-box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
+                box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
+                padding: 0.5rem 15px;
+                font-size: 0.9rem;
+                line-height: initial;
+                color: var(--color-black);
+                background-color: var(--color-white);
+                border: 1px solid var(--color-white);
+                border-radius: 0;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+
+            textarea {
+                resize: none;
+            }
+        }
+
+        .btn {
+            box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 3rem;
+            background-color: var(--color-purple);
+            color: var(--color-white);
+            font-weight: 500;
+            transition: 0.3s all;
+
+            @media screen and(max-width:$sm-breakpoint) {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+
+            i {
+                margin-left: 0.5rem;
+            }
+
+            &:hover {
+                box-shadow: none;
+                background-color: var(--color-black) !important;
+            }
+        }
+    }
+
+    .contact-info {
+        position: relative;
+
+        @media screen and(max-width:$lg-breakpoint) {
+            margin-top: 3rem;
+        }
+
+        ul {
+            padding-left: 0rem;
+
+            li {
+                margin-bottom: 1.5rem;
+
+                &:hover {
+                    span {
+                        color: var(--color-purple) !important;
+                    }
+                }
+
+                .icon {
+
+                    border: 1px dashed var(--color-purple);
+                    width: 5rem;
+                    height: 5rem;
+                    color: var(--color-white);
+                    border-radius: 50%;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    position: relative;
+                    z-index: 1;
+
+                    @media screen and(max-width:$lg-breakpoint) {
+                        width: 3rem;
+                        height: 3rem;
+                        font-size: 0.9rem;
+                    }
+
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        background: var(--color-purple);
+                        border-radius: 50%;
+                        margin: 6px;
+                        -webkit-box-shadow: 0 1px 3px 1px #9667E0;
+                        box-shadow: 0 1px 3px 1px var(--color-purple);
+                        z-index: -1;
+                        transition: 0.3s all;
+                    }
+                }
+
+                .content {
+                    font-size: 0.8rem;
+                    max-width: 16rem;
+                    margin-left: 1.5rem;
+                    color: var(--color-black2);
+
+                    @media screen and(max-width:320px) {
+                        &:nth-child(1n) {
+                            margin-left: 0.5rem !important;
+                            margin-top: 0.5rem;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        margin-bottom: 8px;
+                        color: var(--color-black);
+                        font-size: 1.1rem;
+                        font-weight: 600;
+
+                        @media screen and(max-width:$lg-breakpoint) {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0rem;
+                        color: var(--color-black2);
+                        font-weight: 300;
+                    }
+
+                    a {
+                        color: var(--color-black2);
+                        font-weight: 300;
+
+                        &:hover {
+                            color: var(--color-purple);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.map {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+
+    iframe {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
 footer {
     background-color: var(--color-black);
-
-
-
 
     .footer-top {
         border-bottom: 0.1px solid rgba(255, 255, 255, 0.509);
@@ -1281,6 +1482,7 @@ footer {
             color: var(--color-white);
             font-size: 0.9rem;
             font-weight: 300;
+            margin-top: 0rem;
 
             @media screen and(max-width:$xl-breakpoint) {
                 font-size: 0.8rem;
