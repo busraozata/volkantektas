@@ -239,6 +239,31 @@ $xxl-breakpoint: 1400px; //Extra extra large
     }
 }
 
+@mixin btn {
+    box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-weight: 500;
+    transition: 0.3s all;
+
+    @media screen and(max-width:$sm-breakpoint) {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    i {
+        margin-left: 0.5rem;
+    }
+
+    &:hover {
+        box-shadow: none;
+        background-color: var(--color-black) !important;
+    }
+}
+
 .top-header {
     background-color: var(--color-purple);
     padding: 0.1rem 0rem;
@@ -803,6 +828,10 @@ header {
     .card {
         @include card;
     }
+
+    .btn {
+        @include btn
+    }
 }
 
 .my-vission {
@@ -1315,8 +1344,6 @@ header {
     }
 }
 
-
-
 .contact {
     position: relative;
     padding: 5rem 0rem;
@@ -1378,28 +1405,7 @@ header {
         }
 
         .btn {
-            box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 3rem;
-            background-color: var(--color-purple);
-            color: var(--color-white);
-            font-weight: 500;
-            transition: 0.3s all;
-
-            @media screen and(max-width:$sm-breakpoint) {
-                padding: 0.5rem 1rem;
-                font-size: 1rem;
-            }
-
-            i {
-                margin-left: 0.5rem;
-            }
-
-            &:hover {
-                box-shadow: none;
-                background-color: var(--color-black) !important;
-            }
+            @include btn
         }
     }
 

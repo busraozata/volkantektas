@@ -685,6 +685,29 @@ header .navbar-brand img {
   opacity: 0;
   transition: 0.3s all;
 }
+.services .btn {
+  box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.5) !important;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  font-weight: 500;
+  transition: 0.3s all;
+}
+@media screen and (max-width: 600px) {
+  .services .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+.services .btn i {
+  margin-left: 0.5rem;
+}
+.services .btn:hover {
+  box-shadow: none;
+  background-color: var(--color-black) !important;
+}
 
 .my-vission {
   position: relative;
