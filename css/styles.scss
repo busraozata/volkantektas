@@ -20,6 +20,7 @@
 
 ul {
     margin-bottom: 0rem;
+    padding-left: 0rem;
 }
 
 body {
@@ -368,6 +369,12 @@ header {
     .navbar-nav {
         .nav-item {
 
+            &.megamenu {
+                @media screen and(min-width:$lg-breakpoint) {
+                    position: inherit;
+                }
+            }
+
             .nav-link {
                 color: var(--color-black);
                 font-weight: 500;
@@ -394,10 +401,29 @@ header {
                     }
                 }
             }
+            ul{
+                @media screen and(min-width:$lg-breakpoint) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
 
             .dropdown-menu {
                 border-radius: 0rem;
                 border-top: 3px solid var(--color-purple);
+
+                &.megadropdown-menu {
+                    @media screen and(min-width:$lg-breakpoint) {
+                        min-width: 100%;
+                        left: 0rem;
+
+                        li {
+                            width: calc(50% - 30px);
+                            padding: 0.5rem 0rem;
+                            margin: 0 0.5rem;
+                        }
+                    }
+                }
 
                 @media screen and(max-width:$lg-breakpoint) {
                     position: relative;
@@ -1115,7 +1141,7 @@ header {
         padding-left: 0rem;
         margin-bottom: 1.5rem;
         @include list;
-       
+
         li {
             &:hover {
                 i {
@@ -1125,7 +1151,7 @@ header {
 
             span {
                 @media screen and(max-width:1024px) {
-                    font-size: 0.7rem !important; 
+                    font-size: 0.7rem !important;
                 }
             }
 
