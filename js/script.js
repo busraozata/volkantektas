@@ -1,3 +1,12 @@
+/* ------------------------------------------------------------- */
+
+$(".megamenu .dropdown-item").on("mouseover", function () {
+    var imgPath = $(this).attr("data-image");
+
+    $(".megamenu .img-wrapper img").attr("src", imgPath);
+});
+/* ------------------------------------------------------------- */
+
 const header = document.querySelector(".header");
 const headerHeight = parseInt(window.getComputedStyle(header).height);
 
@@ -18,7 +27,7 @@ var swiper = new Swiper(".mySwiperBanner", {
 });
 
 var swiper = new Swiper(".mySwiperInstagram", {
-  
+
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -26,22 +35,22 @@ var swiper = new Swiper(".mySwiperInstagram", {
     },
     breakpoints: {
         640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
+            slidesPerView: 2,
+            spaceBetween: 30,
         },
         1024: {
             slidesPerView: 3,
             spaceBetween: 30,
-          },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
         },
-      },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
@@ -59,5 +68,6 @@ menuToggle.onclick = function () {
         menuToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     }
 }
+
 
 
